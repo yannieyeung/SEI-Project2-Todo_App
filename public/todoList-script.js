@@ -10,8 +10,17 @@ var buttonClick = function (event) {
     // var id = querySelector;
     // console.log(this.reponse);
     event.target.closest(".eachTodo").innerText = "";
-
-    //   db.todoListModel.deleteTodo(values, whenDoneInModel);
+    console.log("++++++++++++++++++++");
+    console.log(this.response);
+    const whenDoneInModel = (err, result) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(result);
+      }
+    };
+    const values = eachItemId;
+    db.todoListModel.deleteTodo(values, whenDoneInModel);
   };
   var request = new XMLHttpRequest();
   request.responseType = "json";
@@ -28,10 +37,12 @@ var buttonClick = function (event) {
 
 var allButton = document.querySelectorAll(".delete");
 var allTodo = document.querySelectorAll(".eachTodo");
+var allTodoId = document.querySelectorAll(".eachTodo");
 console.log(allButton);
 console.log(allTodo);
 for (var i = 0; i < allButton.length; i++) {
   var eachButton = allButton[i];
   var eachItem = allTodo[i];
+  var eachItemId = allTodoId[i];
   eachButton.addEventListener("click", buttonClick);
 }

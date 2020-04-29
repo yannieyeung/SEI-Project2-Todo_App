@@ -4,7 +4,7 @@ class TodoList extends React.Component {
   render() {
     const allTodo = this.props.userTodoList.map((eachTodo) => {
       return (
-        <div class="eachTodo">
+        <div className="eachTodo">
           <h3 className="item">{eachTodo.todo_item}</h3>
           <button className="delete">delete</button>
           <input type="hidden" value={eachTodo.name}></input>

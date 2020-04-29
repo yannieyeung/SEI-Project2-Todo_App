@@ -54,6 +54,9 @@ const signedUpModel = signedUpFunc(pool);
 const todoListFunc = require("./models/todoList.js");
 const todoListModel = todoListFunc(pool);
 
+const getTodoListFunc = require("./models/getTodoList.js");
+const getTodoListModel = getTodoListFunc(pool);
+
 /*
  * ===================================================
  * ======          MODULE EXPORTS            =========
@@ -74,5 +77,6 @@ module.exports = {
    */
   signedUpModel: signedUpModel,
   todoListModel: todoListModel,
+  getTodoListModel: getTodoListModel,
   // users: userModelsObject,
 };

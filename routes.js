@@ -45,6 +45,9 @@ module.exports = (app, allModels) => {
   const todoListPage = require("./controllers/todoList.js")(allModels);
   app.post("/todolist", todoListPage.todoListCallback);
 
+  const getTodoListPage = require("./controllers/getTodoList.js")(allModels);
+  app.get("/todolist", getTodoListPage.getTodoListCallback);
+
   //=========================================
   //      route for new tweet (post)
   //=========================================
