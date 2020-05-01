@@ -4,32 +4,31 @@ var buttonClick = function (event) {
     // console.log("response text", this.responseText);
     console.log("status text", this.statusText);
     console.log("status code", this.status);
-    console.log(event.target.closest(".eachTodo"));
+    // console.log(event.target.closest(".eachTodo"));
     // var hello = document.querySelector("h1");
     // hello.innerText = "";
     // var id = querySelector;
     // console.log(this.reponse);
-    event.target.closest(".eachTodo").innerText = "";
-    console.log("++++++++++++++++++++");
-    console.log(this.response);
-    const whenDoneInModel = (err, result) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log(result);
-      }
-    };
-    const values = eachItemId;
-    db.todoListModel.deleteTodo(values, whenDoneInModel);
+
+    // event.target.closest(".eachTodo").innerText = "";
+    // console.log("++++++++++++++++++++");
+    // console.log(this.response);
   };
+  console.log("click");
+  let id = document.querySelector(".todo_id").value;
+  console.log(id);
+  console.log(eachButton);
+
+  let todo_item = event.target.closest(".eachTodo");
+  todo_item.style = "display:none";
   var request = new XMLHttpRequest();
   request.responseType = "json";
   // listen for the request response
   request.addEventListener("load", responseHandler);
 
   // ready the system by calling open, and specifying the url
-  var url = "http://127.0.0.1:3000/todolist";
-  request.open("GET", url);
+  var url = "/deleteTodolist/" + id;
+  request.open("post", url);
 
   // send the request
   request.send();

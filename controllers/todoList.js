@@ -19,11 +19,20 @@ module.exports = (db) => {
           response.cookie("LoginCookie", hashedCookie);
           response.cookie("LoginCookie2", user_id);
           const whenDoneInModel1 = (err, result) => {
-            const data = {
-              userTodoList: result,
-              username: result[0].name,
-            };
-            response.render("todoList", data);
+            if (result === null) {
+              const data = {
+                username: request.body.username,
+                user_id: request.cookies["LoginCookie2"],
+              };
+              //   console.log(data.user_id);
+              response.render("noTodo", data);
+            } else {
+              const data = {
+                userTodoList: result,
+                username: result[0].name,
+              };
+              response.render("todoList", data);
+            }
           };
           const values = user_id;
           db.todoListModel.userTodoList(values, whenDoneInModel1);

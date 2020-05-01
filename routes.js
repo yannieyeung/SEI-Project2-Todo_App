@@ -40,20 +40,34 @@ module.exports = (app, allModels) => {
   //   app.delete("/signout", signOut.signOutPage);
 
   //=========================================
-  //      route for todo list (post)
+  //      route for todo list
   //=========================================
   const todoListPage = require("./controllers/todoList.js")(allModels);
   app.post("/todolist", todoListPage.todoListCallback);
 
   const getTodoListPage = require("./controllers/getTodoList.js")(allModels);
-  app.get("/todolist", getTodoListPage.getTodoListCallback);
+  app.use("/todolist", getTodoListPage.getTodoListCallback);
 
   //=========================================
-  //      route for new tweet (post)
+  //      route for delete todo list
   //=========================================
 
-  //   const addedtweet = require("./controllers/addedtweet.js")(allModels);
-  //   app.post("/addedtweet", addedtweet.addedtweetCallback);
+  const deleteTodoList = require("./controllers/deleteTodoList.js")(allModels);
+  app.post("/deleteTodolist/:id", deleteTodoList.deleteTodoListCallback);
+
+  //=========================================
+  //      route for posting the todo form
+  //=========================================
+
+  const addOneTodo = require("./controllers/addOneTodo.js")(allModels);
+  app.post("/addtodo/:id", addOneTodo.addOneTodoCallback);
+
+  //=========================================
+  //      route for add todo (form)
+  //=========================================
+
+  const addtodoPage = require("./controllers/addTodo.js")(allModels);
+  app.use("/addtodo", addtodoPage.addTodoCallback);
 
   //=========================================
   //     route for showing all tweets

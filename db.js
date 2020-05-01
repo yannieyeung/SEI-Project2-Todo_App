@@ -57,6 +57,15 @@ const todoListModel = todoListFunc(pool);
 const getTodoListFunc = require("./models/getTodoList.js");
 const getTodoListModel = getTodoListFunc(pool);
 
+const deleteTodoListFunc = require("./models/deleteTodoList.js");
+const deleteTodoModel = deleteTodoListFunc(pool);
+
+const addTodoFormFunc = require("./models/addTodo.js");
+const addTodoFormModel = addTodoFormFunc(pool);
+
+const addOneTodoFunc = require("./models/addOneTodo.js");
+const addOneTodoModel = addOneTodoFunc(pool);
+
 /*
  * ===================================================
  * ======          MODULE EXPORTS            =========
@@ -78,5 +87,9 @@ module.exports = {
   signedUpModel: signedUpModel,
   todoListModel: todoListModel,
   getTodoListModel: getTodoListModel,
+  deleteTodoModel: deleteTodoModel,
+  addTodoFormModel: addTodoFormModel,
+  addOneTodoModel: addOneTodoModel,
+
   // users: userModelsObject,
 };

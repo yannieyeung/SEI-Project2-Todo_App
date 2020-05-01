@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1080px;
+  height: 100%;
+  padding-left: 250px;
+  padding-top: 100px;
+}
+
+h3 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 200;
+}
+h1 {
+  padding-bottom: 30px;
+}
+
+.hello {
+  font-weight: 700;
+}
+
+.delete {
+}
+
+.delete:hover {
+  cursor: pointer;
+  animation: play30 1s linear infinite;
+}
+
+@keyframes play30 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -720px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 500ms;
+  animation-timing-function: steps(30);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+.shapeshifter.play {
+  animation-name: play30;
+}

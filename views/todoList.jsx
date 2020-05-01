@@ -6,7 +6,7 @@ class TodoList extends React.Component {
       return (
         <div className="eachTodo">
           <h3 className="item">{eachTodo.todo_item}</h3>
-          <button className="delete">delete</button>
+          <button className="delete shapeshifter-play" >delete</button>
           <input type="hidden" value={eachTodo.name}></input>
           <input type="hidden" className="todo_id" value={eachTodo.id}></input>
 
@@ -16,11 +16,21 @@ class TodoList extends React.Component {
     });
     return (
       <html>
-        <script defer src="./todoList-script.js" />
         <head />
+        <script defer src="./todoList-script.js" />
+
+        <link rel="stylesheet" href="todo.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        ></link>
+
         <body>
-          <h1>Hello {this.props.username}</h1>
+          <h3 className="hello">Hello,</h3>
+
+          <h1> {this.props.username}</h1>
           {allTodo}
+          <br />
         </body>
       </html>
     );
