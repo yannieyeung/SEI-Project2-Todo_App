@@ -4,8 +4,8 @@
 }
 
 body {
-  width: 1080px;
-  height: 100%;
+  max-width: 1080px;
+  height: 700px;
   padding-left: 250px;
   padding-top: 100px;
 }
@@ -13,21 +13,15 @@ body {
 h3 {
   font-family: "Comfortaa", cursive;
   font-weight: 200;
+  color: #0a2b68;
 }
 h1 {
   padding-bottom: 30px;
+  color: #3789df;
 }
 
 .hello {
   font-weight: 700;
-}
-
-.delete {
-}
-
-.delete:hover {
-  cursor: pointer;
-  animation: play30 1s linear infinite;
 }
 
 @keyframes play30 {
@@ -38,13 +32,313 @@ h1 {
     background-position: -720px 0px;
   }
 }
+div .shapeshifter {
+  width: 24px;
+  height: 24px;
+}
 .shapeshifter {
   animation-duration: 500ms;
   animation-timing-function: steps(30);
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
+  animation-fill-mode: forwards;
 }
-.shapeshifter.play {
+.shapeshifter:hover {
+  cursor: pointer;
   animation-name: play30;
+}
+
+svg {
+  width: 450px;
+  margin-left: 370px;
+}
+
+#leaf_1 {
+  animation-duration: 1.2s;
+  animation-name: animateLeaf1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animateLeaf1 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: rotate(3.5deg);
+  }
+}
+#leaf_2 {
+  animation-duration: 2s;
+  animation-name: animateLeaf2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animateLeaf2 {
+  from {
+    transform: translateX(5px) translateY(10px);
+  }
+  to {
+    transform: rotate(2deg);
+    transform: translateX(10px) translateY(-20px);
+  }
+}
+#leaf_3 {
+  animation-duration: 1s;
+  animation-name: animateLeaf3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animateLeaf3 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    /* transform: rotate(270deg); */
+    transform: translateX(0px) translateY(5px);
+  }
+}
+#leaf_4 {
+  animation-duration: 1.4s;
+  animation-name: animateLeaf4;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animateLeaf4 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    /* transform: rotate(270deg); */
+    transform: translateX(-10px) translateY(5px);
+  }
+}
+#leaf_5 {
+  animation-duration: 1s;
+  animation-name: animateLeaf5;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animateLeaf5 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    /* transform: rotate(270deg); */
+    transform: translateX(-10px) translateY(-5px);
+  }
+}
+#leaf_6 {
+  animation-duration: 1s;
+  animation-name: animateLeaf6;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animateLeaf6 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: rotate(-1deg);
+  }
+}
+
+#question_mark {
+  animation-duration: 1.5s;
+  animation-name: question_mark;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes question_mark {
+  from {
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+
+#envelop {
+  animation-duration: 1.9s;
+  animation-name: envelop;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes envelop {
+  from {
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+
+#envelop_2 {
+  animation-duration: 1.85s;
+  animation-name: envelop_2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes envelop_2 {
+  from {
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+
+#aeroplane {
+  animation-duration: 1.8s;
+  animation-name: aeroplane;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes aeroplane {
+  from {
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+
+#ex-mark {
+  animation-duration: 2s;
+  animation-name: ex-mark;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes ex-mark {
+  from {
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(4deg);
+  }
+}
+
+#_x33__ex-mark {
+  animation-duration: 1.6s;
+  animation-name: ex-marks;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes ex-marks {
+  from {
+    transform-origin: 200px 200px;
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+
+.st0 {
+  fill: #eef4ff;
+}
+.st1 {
+  display: none;
+}
+.st2 {
+  fill: #eef2f8;
+}
+.st3 {
+  fill: #ffcad3;
+}
+.st4 {
+  fill: #dae1ff;
+}
+.st5 {
+  opacity: 0.7;
+  fill: #eef2f8;
+}
+.st6 {
+  fill: #c6d1ff;
+}
+.st7 {
+  fill: #db9bad;
+}
+.st8 {
+  fill: #bdcaf4;
+}
+.st9 {
+  fill: #8ec3eb;
+}
+.st10 {
+  fill: #da7da1;
+}
+.st11 {
+  fill: #7db0e1;
+}
+.st12 {
+  fill: #7383c6;
+}
+.st13 {
+  fill: #4a8bda;
+}
+.st14 {
+  fill: #498ad9;
+}
+.st15 {
+  fill: #7c8ecd;
+}
+.st16 {
+  fill: #6e7bbe;
+}
+.st17 {
+  fill: none;
+  stroke: #506eb6;
+  stroke-width: 0.75;
+  stroke-miterlimit: 10;
+}
+.st18 {
+  fill: #d780a2;
+}
+.st19 {
+  fill: none;
+  stroke: #6f7cbf;
+  stroke-miterlimit: 10;
+}
+.st20 {
+  fill: #78b0e0;
+}
+.st21 {
+  fill: none;
+  stroke: #6e7bbe;
+  stroke-width: 0.75;
+  stroke-miterlimit: 10;
+}
+.st22 {
+  fill: none;
+  stroke: #7c8fcd;
+  stroke-miterlimit: 10;
+}
+.st23 {
+  fill: none;
+}
+.st24 {
+  fill: #2e61ac;
+}
+.st25 {
+  fill: #286abe;
+}
+.st26 {
+  fill: #564ecf;
+}
+.st27 {
+  fill: #0f2c64;
+}
+.st28 {
+  fill: #0e2b63;
+}
+.st29 {
+  fill: #7eb1e2;
+}
+.st30 {
+  fill: #ffffff;
 }

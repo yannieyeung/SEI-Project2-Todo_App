@@ -45,3 +45,14 @@ for (var i = 0; i < allButton.length; i++) {
   var eachItemId = allTodoId[i];
   eachButton.addEventListener("click", buttonClick);
 }
+
+var hover = function (event) {
+  this.classList.add("play");
+};
+
+// var allBtn = document.querySelectorAll(".shapeshifter");
+// for (var i = 0; i < allBtn.length; i++) {
+//   var eachBtn = allBtn[i];
+
+//   eachButton.addEventListener("mouseenter", hover);
+// }
