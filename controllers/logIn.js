@@ -6,7 +6,7 @@ module.exports = (db) => {
    */
 
   let logInForm = (request, response) => {
-    response.render("logInForm");
+    response.render("loginAndSignUp");
   };
   /**
    * ===========================================

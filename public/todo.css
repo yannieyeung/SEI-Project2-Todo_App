@@ -48,9 +48,30 @@ div .shapeshifter {
   cursor: pointer;
   animation-name: play30;
 }
+button {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+  background: linear-gradient(to right, #c8d1ff, #a6b5f7);
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 0 2px 2px #d9dffc;
+
+  margin-left: 6.5px;
+}
+button:hover {
+  /* transform-origin: center; */
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: 0 0 2px 2px #9caaf4;
+  cursor: pointer;
+}
 
 svg {
-  width: 450px;
+  width: 500px;
   margin-left: 370px;
 }
 
