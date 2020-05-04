@@ -6,7 +6,8 @@ module.exports = (db) => {
    */
 
   let signUpPageForm = (req, res) => {
-    res.render("signUpForm");
+    // res.render("signUpForm");
+    res.render("loginAndSignUp");
   };
   /**
    * ===========================================
