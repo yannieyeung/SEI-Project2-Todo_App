@@ -12,7 +12,7 @@ module.exports = (db) => {
       } else {
         if (request.cookies["LoginCookie"] == null) {
           console.log(request.cookies["LoginCookie"]);
-          //   response.status(403);
+          response.status(403);
           response.send("You are not allowed");
         } else if (result === null) {
           whenDoneInModel1 = (err, result) => {

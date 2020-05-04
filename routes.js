@@ -36,8 +36,8 @@ module.exports = (app, allModels) => {
   //        route for sign out
   //=========================================
 
-  //   const signOut = require("./controllers/signout.js")(allModels);
-  //   app.delete("/signout", signOut.signOutPage);
+  const signOut = require("./controllers/signout.js")(allModels);
+  app.delete("/signout", signOut.signOutPage);
 
   //=========================================
   //      route for todo list
@@ -68,11 +68,4 @@ module.exports = (app, allModels) => {
 
   const addtodoPage = require("./controllers/addTodo.js")(allModels);
   app.use("/addtodo", addtodoPage.addTodoCallback);
-
-  //=========================================
-  //     route for showing all tweets
-  //=========================================
-
-  //   const alltweets = require("./controllers/alltweets.js")(allModels);
-  //   app.get("/alltweets", alltweets.allTweetsCallback);
 };

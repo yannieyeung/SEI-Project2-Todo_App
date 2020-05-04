@@ -11,6 +11,11 @@ class NoTodo extends React.Component {
           rel="stylesheet"
         ></link>
         <body>
+          <nav>
+            <form action="/signout?_method=delete" method="POST">
+              <button type="submit">Sign out</button>
+            </form>
+          </nav>
           <form action="/addtodo" method="POST">
             <h3 className="hi">Hi,</h3>
             <h1>{this.props.username}</h1>
