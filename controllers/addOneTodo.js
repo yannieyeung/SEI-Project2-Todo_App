@@ -12,7 +12,7 @@ module.exports = (db) => {
       } else {
         console.log(result);
         response.redirect("/todolist");
-        response.send(result);
+        // response.send(result);
         // response.redirect("/todolist");
       }
     };

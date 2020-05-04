@@ -15,9 +15,11 @@ var buttonClick = function (event) {
     // console.log(this.response);
   };
   console.log("click");
-  let id = document.querySelector(".todo_id").value;
+  let id = event.target.value;
   console.log(id);
-  console.log(eachButton);
+  // console.log(event.target.attributes["data-value"].nodeValue);
+  // console.log(event.target.value);
+  // console.log(eachButton);
 
   let todo_item = event.target.closest(".eachTodo");
   todo_item.style = "display:none";

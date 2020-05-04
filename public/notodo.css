@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1080px;
+  height: 700px;
+  padding-left: 250px;
+  padding-top: 100px;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; */
+}
+
+h3 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 200;
+  color: #0a2b68;
+  padding-bottom: 12px;
+}
+h1 {
+  padding-bottom: 30px;
+  color: #3789df;
+}
+
+.hi {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  color: #0a2b68;
+  padding-bottom: 2px;
+}
+
+button {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+  background: linear-gradient(to right, #c8d1ff, #a6b5f7);
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 0 2px 2px #d9dffc;
+
+  margin-left: 6.5px;
+}
+button:hover {
+  /* transform-origin: center; */
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: 0 0 2px 2px #9caaf4;
+  cursor: pointer;
+}
+svg {
+  width: 600px;
+  margin-left: 370px;
+}
+
+#cloud1 {
+  animation-duration: 1.2s;
+  animation-name: cloud1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cloud1 {
+  from {
+    transform-origin: 100% 100%;
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+
+#cloud2 {
+  animation-duration: 1.8s;
+  animation-name: cloud2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cloud2 {
+  from {
+    transform-origin: 100% 100%;
+  }
+  to {
+    transform: rotate(1.5deg);
+  }
+}
+
+#cloud3 {
+  animation-duration: 1s;
+  animation-name: cloud3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cloud3 {
+  from {
+    transform-origin: 90% 90%;
+  }
+  to {
+    transform: translateY(10px) translateX(-5px);
+  }
+}
+
+#cloud4 {
+  animation-duration: 2s;
+  animation-name: cloud4;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cloud4 {
+  from {
+    transform-origin: 50% 50%;
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+
+#cloud5 {
+  animation-duration: 1.5s;
+  animation-name: cloud5;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cloud5 {
+  from {
+    transform-origin: 100% 50%;
+  }
+  to {
+    transform: rotate(-3deg);
+  }
+}
+#cloud6 {
+  animation-duration: 1.3s;
+  animation-name: cloud5;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes cloud5 {
+  from {
+    transform-origin: 60% 50%;
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+
+#smallCloud {
+  animation-duration: 1.3s;
+  animation-name: smallcloud;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes smallcloud {
+  0% {
+    transform-origin: center;
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.st0 {
+  fill: url(#SVGID_1_);
+}
+.st1 {
+  fill: #eef9ff;
+}
+.st2 {
+  fill: #91a9ed;
+}
+.st3 {
+  fill: #8ec3eb;
+}
+.st4 {
+  fill: #d780a2;
+}
+.st5 {
+  fill: #db9bad;
+}
+.st6 {
+  fill: #7e97cd;
+}
+.st7 {
+  fill: #0e2b63;
+}
+.st8 {
+  fill: #63301a;
+}
+.st9 {
+  fill: #4b2012;
+}
+.st10 {
+  fill: #092147;
+}
+.st11 {
+  opacity: 0.2;
+}
+.st12 {
+  fill: #516bb2;
+}
+.st13 {
+  fill: #f8d0b7;
+}
+.st14 {
+  fill: #efbdac;
+}
+.st15 {
+  fill: #ac742a;
+}
+.st16 {
+  fill: #d0932a;
+}
+.st17 {
+  opacity: 0.7;
+  fill: #0e2b63;
+}

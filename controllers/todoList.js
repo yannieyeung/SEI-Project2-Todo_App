@@ -11,7 +11,9 @@ module.exports = (db) => {
     const whenDoneInModel = (error, result) => {
       console.log("FFFRROOOMMM CONTROLLER");
       console.log(result);
-      if (result[0].name === request.body.username) {
+      if (result === null) {
+        response.send("No such user! Please register for an account");
+      } else if (result[0].name === request.body.username) {
         let reqPassword = sha256(request.body.password);
         if (reqPassword === result[0].password) {
           let user_id = result[0].id;
@@ -40,7 +42,7 @@ module.exports = (db) => {
           response.send("Incorrect Password");
         }
       } else {
-        response.send("No such user! Please register for an account");
+        response.send("Hello");
       }
     };
     console.log(request.body.username);

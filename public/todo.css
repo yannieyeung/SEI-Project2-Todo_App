@@ -24,6 +24,17 @@ h1 {
   font-weight: 700;
 }
 
+.delete {
+  box-shadow: none;
+}
+
+.delete:hover {
+  box-shadow: none;
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
 @keyframes play30 {
   0% {
     background-position: 0px 0px;
