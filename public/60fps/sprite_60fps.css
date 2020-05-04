@@ -9,15 +9,9 @@
 .shapeshifter {
   animation-duration: 500ms;
   animation-timing-function: steps(30);
-  animation-fill-mode: forwards;
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.shapeshifter:hover {
-  animation-name: play30;
 }
 .shapeshifter.play {
   animation-name: play30;

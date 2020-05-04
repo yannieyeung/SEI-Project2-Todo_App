@@ -13,7 +13,13 @@ class NoTodo extends React.Component {
         <body>
           <nav>
             <form action="/signout?_method=delete" method="POST">
-              <button type="submit">Sign out</button>
+              <button
+                className="signout-btn shapeshifter"
+                type="submit"
+                style={{ backgroundImage: "url('/60fps/sprite_60fps.svg')" }}
+              >
+                {/* Sign out */}
+              </button>
             </form>
           </nav>
           <form action="/addtodo" method="POST">
@@ -22,7 +28,7 @@ class NoTodo extends React.Component {
             <h3>You have no Todo</h3>
 
             <form method="get" action="/addtodo">
-              <button>+</button>
+              <button className="add">+</button>
             </form>
           </form>
 

@@ -32,7 +32,31 @@ h1 {
   padding-bottom: 2px;
 }
 
-button {
+.shapeshifter {
+  margin-left: 950px;
+  border: none;
+  outline: none;
+  animation-duration: 500ms;
+  animation-timing-function: steps(30);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  animation-fill-mode: forwards;
+}
+.shapeshifter:hover {
+  cursor: pointer;
+  animation-name: play30;
+}
+@keyframes play30 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -720px 0px;
+  }
+}
+
+.add {
   height: 30px;
   width: 30px;
   border-radius: 30px;
@@ -45,7 +69,7 @@ button {
 
   margin-left: 6.5px;
 }
-button:hover {
+.add:hover {
   /* transform-origin: center; */
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -54,7 +78,7 @@ button:hover {
   cursor: pointer;
 }
 svg {
-  width: 600px;
+  width: 500px;
   margin-left: 370px;
 }
 
