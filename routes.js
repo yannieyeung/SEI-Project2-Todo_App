@@ -8,6 +8,13 @@ module.exports = (app, allModels) => {
    */
 
   //=========================================
+  //        / page
+  //=========================================
+
+  // const main = require("./controllers/logIn.js")(allModels);
+  // app.use("/", main.logInForm);
+
+  //=========================================
   //        Sign Up page
   //=========================================
 

@@ -17,7 +17,8 @@ var signup = function (event) {
   request.addEventListener("load", responseHandler);
 
   // ready the system by calling open, and specifying the url
-  var url = "http://127.0.0.1:3000/signup";
+  // var url = "http://127.0.0.1:3000/signup";
+  var url = "/signup";
   request.open("GET", url);
 
   // send the request
