@@ -23,6 +23,39 @@ h1 {
   padding-bottom: 30px;
   color: #3789df;
 }
+.signout-btn {
+  margin-left: 950px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0%;
+}
+.signout-btn:hover {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+@keyframes play30 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -720px 0px;
+  }
+}
+
+.shapeshifter {
+  animation-duration: 500ms;
+  animation-timing-function: steps(30);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  animation-fill-mode: forwards;
+}
+.shapeshifter:hover {
+  cursor: pointer;
+  animation-name: play30;
+}
 
 span.todo-item {
   font-family: "Comfortaa", cursive;

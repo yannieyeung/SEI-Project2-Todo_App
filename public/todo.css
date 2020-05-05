@@ -7,7 +7,7 @@ body {
   max-width: 1080px;
   height: 700px;
   padding-left: 250px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 h3 {
@@ -22,6 +22,18 @@ h1 {
 
 .hello {
   font-weight: 700;
+}
+.signout-btn {
+  margin-left: 950px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0%;
+}
+.signout-btn:hover {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .delete {

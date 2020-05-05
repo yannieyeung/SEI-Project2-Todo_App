@@ -13,6 +13,17 @@ class TodoForm extends React.Component {
           rel="stylesheet"
         ></link>
         <body>
+          <nav>
+            <form action="/signout?_method=delete" method="POST">
+              <button
+                className="signout-btn shapeshifter"
+                type="submit"
+                style={{ backgroundImage: "url('/60fps/sprite_60fps.svg')" }}
+              >
+                {/* Sign out */}
+              </button>
+            </form>
+          </nav>
           <main>
             <form action={path} method="POST">
               <h3>Hello,</h3>
