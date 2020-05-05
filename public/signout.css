@@ -1,0 +1,163 @@
+body {
+  max-width: 1080px;
+  height: 700px;
+  padding-left: 250px;
+  padding-top: 50px;
+}
+h3 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 200;
+  color: #0a2b68;
+}
+
+button {
+  height: 30px;
+  width: 70px;
+  border-radius: 30px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+  background: linear-gradient(to right, #c8d1ff, #a6b5f7);
+  border: none;
+  font-size: 15px;
+  box-shadow: 0 0 2px 2px #d9dffc;
+
+  margin-left: 6.5px;
+}
+button:hover {
+  /* transform-origin: center; */
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: 0 0 2px 2px #9caaf4;
+  cursor: pointer;
+}
+svg {
+  width: 500px;
+  margin-left: 370px;
+}
+
+#speech {
+  animation-duration: 1.2s;
+  animation-name: speech;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes speech {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(-5px) translateY(5px);
+  }
+}
+
+.byebye {
+  animation-duration: 1.2s;
+  animation-name: byebye;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes byebye {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(5px) translateY(-5px);
+  }
+}
+
+/* .manArm {
+  animation-duration: 1.8s;
+  animation-name: manarm;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes manarm {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(5px) translateY(-5px);
+    transform: rotate(1deg);
+  }
+} */
+
+.st0 {
+  opacity: 0.6;
+  fill: #9baeea;
+}
+.st1 {
+  fill: #e9f6ff;
+}
+.st2 {
+  fill: #ffffff;
+}
+.st3 {
+  fill: #c1cbea;
+}
+.st4 {
+  opacity: 0.6;
+}
+.st5 {
+  fill: #cad3f9;
+}
+.st6 {
+  fill: #d0dafc;
+}
+.st7 {
+  fill: #e0e0e0;
+}
+.st8 {
+  fill: #9dc1e8;
+}
+.st9 {
+  fill: #eef7ff;
+}
+.st10 {
+  fill: #0e2b63;
+}
+.st11 {
+  fill: #fcc1be;
+}
+.st12 {
+  opacity: 0.2;
+}
+.st13 {
+  fill: #407bff;
+}
+.st14 {
+  fill: #93a3e5;
+}
+.st15 {
+  opacity: 0.6;
+  fill: #93a3e5;
+}
+.st16 {
+  opacity: 0.2;
+  fill: #93a3e5;
+}
+.st17 {
+  fill: #c17f9e;
+}
+.st18 {
+  fill: #6289d5;
+}
+.st19 {
+  fill: #456ab9;
+}
+.st20 {
+  fill: #ffc3bd;
+}
+.st21 {
+  fill: #c999aa;
+}
+.st22 {
+  opacity: 0.4;
+  fill: #c999aa;
+}
+.st23 {
+  opacity: 0.3;
+}
+.st24 {
+  opacity: 0.4;
+}
